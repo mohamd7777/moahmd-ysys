@@ -27,7 +27,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
-const prefix = 'G.';
+const prefix = '.';
 var table = require('table').table
 var ti={}  
 ,spee={}
@@ -147,9 +147,9 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
  **       
 『${prefix}rps / حجر ورقة مقص』
 『${prefix}speed / اسرع كتابة』
-『${prefix}quas / اسئلة عامة』
+『$prefix}quas / اسئلة عامة』
 『${prefix}نكت / نكت 』
-『${prefix}لعبة فكك / فكك』
+$『{prefix}لعبة فكك / فكك』
 『${prefix}عواصم عشوائي/عواصم』
 『${prefix}لعبة كت تويت / كت تويت』
 『${prefix}roll <number> / قرعة』
@@ -160,7 +160,7 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
 『welcome يتم الترحيب فى روم باسم』
 『G.setwelcomer <text channel name> لاختيار روم للترحيب』
-『${prefix}voiceonline / لتفعيل روم الفويس اونلاين』
+『.{prefix}voiceonline / لتفعيل روم الفويس اونلاين』
 **
    
 `]
@@ -3599,7 +3599,7 @@ client.on("message", (message) => {
 })
 client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
-return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-gg.com/9X657Y]**")
+return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-gg.com/h81uIIb]**")
     }
     )});
 client.login(process.env.BOT_TOKEN)
