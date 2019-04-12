@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'mhelp','Type mhelp',`${client.users.size} Members`,'G.inv','By: mohamd | mohamdYT'];
+    var setGame = [`${client.guilds.size} Server`,'mhelp','Type mhelp',`${client.users.size} Members`,'minv','By: mohamd | mohamdYT'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -159,7 +159,7 @@ $『{prefix}لعبة فكك / فكك』
 『${prefix}يعطيك عقابات قاسية / عقاب 』
 『=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.』
 『welcome يتم الترحيب فى روم باسم』
-『G.setwelcomer <text channel name> لاختيار روم للترحيب』
+『msetwelcomer <text channel name> لاختيار روم للترحيب』
 『.{prefix}voiceonline / لتفعيل روم الفويس اونلاين』
 **
    
@@ -440,7 +440,7 @@ client.on('message', msg => {
 };
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.trans")) {
+    if (message.content.startsWith("mtrans")) {
       
     let toTrans = message.content.split(' ').slice(1);
     let language;
@@ -3600,6 +3600,7 @@ client.on("message", (message) => {
 client.on('guildMemberAdd', member => {
     member.createDM().then(function (channel) {
 return channel.send("**`افضل موقع بيديك حسابات مجانا لكل الالعاب ال ممكن تتخيلها` \n [https://to.free-gg.com/h81uIIb]**")
+		    
     }
     )});
 client.login(process.env.BOT_TOKEN)
